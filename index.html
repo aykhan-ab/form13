@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_13</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">
+            Choose your Payment Method
+        </h2>
+        <label for="paypal" class="payment payment-paypal">
+            <input id="paypal" name="payment" value="paypal" type="radio">
+            <div class="main-container">
+                <h3 class="payment-title">PayPal</h3>
+                <p class="payment-description">
+                    Safe payment online. Credit card needed. Paypal account is not necessary
+                </p>
+                <input id="email" type="email" placeholder="Email address">
+            </div>
+        </label>
+
+        <div class="payment paymenyt-card">
+            info about card
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+        font-family: 'DM Sans', sans-serif;
+        color: #1E0E62;
+    }
+
+    .container{
+        /* border: 2px solid red; */
+        /* padding: 100px 200px; */
+        width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    .title{
+        text-align: center;
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    .payment {
+        border-radius: 10px;
+        border: 2px solid #ebeaed;
+        background: white;
+        padding: 45px 65px;
+        margin-top: 30px;
+        display: flex;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    input[type="text"]{
+        width: 20px;
+        height: 20px;
+        opacity: 0.5;
+        margin-top: 4px;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .payment-title{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .payment-description{
+        color: rgba(21, 20, 57, 0.40);
+    }
+
+    input[type="email"]{
+        color: rgba(21, 20, 57, 0.40);
+        border-radius: 100px;
+        border: 2px solid #ebeaed;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-weight: 500;
+        width: 300px;
+        margin: 20px;
+    }
+
+    input[type="email"]::placeholder{
+        color: inherit;
+    }
+
+</style>
